@@ -1,0 +1,23 @@
+/**
+ * projekt: Mobile first
+ **/
+
+/* Adobe fonts */
+@import url("https://use.typekit.net/iet2zpy.css");
+/* font-family: 'rig-shaded-medium-face', sans-serif; font-weight: 500; font-style: normal; */
+@import url("https://use.typekit.net/iet2zpy.css");
+/* font-family: 'franklin-gothic-urw', sans-serif; font-weight: 300; font-style: normal; */
+
+/* Variabler*/
+:root {
+  /* farver */
+  --white: #fcfcfc;
+  --offwhite: #f8f4f1;
+  --beige: #ece2d7;
+  --green: #7c8f67;
+  --black: #1d0b09;
+
+  /* fonte */
+  --overskrift: 'rig-shaded-medium-face', sans-serif; /* overskrifter */
+  --brødtekst: 'franklin-gothic-urw', sans-serif; /* brødtekst */
+}
