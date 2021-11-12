@@ -75,7 +75,7 @@ header img {
   margin-bottom: 5%; /* MOBIL */
 }
 
-header .btn1 {
+header .btn {
   position: absolute;
   top: 40%; /* MOBIL */
   left: 50%; /* MOBIL */
@@ -101,6 +101,17 @@ header h2 {
   color: var(--black);
 }
 
+/* FORSIDE - kategorier */
+#kategorier img {
+  padding-top: 25px;
+}
+
+#kategorier .btn1 {
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -108,7 +119,7 @@ header h2 {
   h1 {
     font-size: 1.4em;
     text-align: center;
-    /* max-width: 15ch; */
+    max-width: 15ch;
   }
   p {
     font-size: 1.4em;
