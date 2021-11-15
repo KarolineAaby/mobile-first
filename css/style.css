@@ -25,7 +25,10 @@
   --whitespace: .5rem;
 
   /* teksturer ("fliselagte baggrunde") */
-  --baggrund: url('../images/baggrund.png')
+  --baggrund: url('../images/baggrund.png');
+  --behandlinger: url('../images/behandlinger.png');
+  --academy: url('../images/academy.png');
+  --omos: url('../images/omos.png');
 }
 
 * {
@@ -116,38 +119,75 @@ header h2 {
 }
 
 /* FORSIDE - kategorier */
-#kategorier img {
+#kategorier {
   padding-top: 25px;
+  /*display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; */
 }
 
-/* Boks med tekst ovenpå billede */
-div.boks1 {
+/* NY Boks med tekst ovenpå billede */
+div.boks {
+  width: 90%;
+  height: 90%;
+  background: rgba(234, 230, 227, 0.65); /* offwhite baggrund med 65% opacity */
+  padding: 50px;
+  margin: 20px;
+}
+div.behandlinger {
+  background-image: var(--behandlinger);
+  background-size:100% auto;
+  height: 300px;
+  padding-top: 0.5%;
+  margin-top: 25px;
+}
+div.academy {
+  background-image: var(--academy);
+  background-size:100% auto;
+  height: 300px;
+  padding-top: 0.5%;
+  margin-top: 25px;
+}
+div.omos {
+  background-image: var(--omos);
+  background-size:100% auto;
+  height: 300px;
+  padding-top: 0.5%;
+  margin-top: 25px;
+}
+
+/* GAMLE Boks med tekst ovenpå billede */
+/*#kategorier img {
+  padding-top: 25px;
+}*/
+ /*div.boks1 {
   width: 90%;
   height: 300px;
   background: rgba(234, 230, 227, 0.6); /* offwhite baggrund med 60% opacity */
-  padding: 50px;
+  /* padding: 50px;
   margin: 20px;
   position: absolute;
   top: 91%; /* MOBIL */
-}
+/* }
 div.boks2 {
   width: 90%;
   height: 300px;
   background: rgba(234, 230, 227, 0.6); /* offwhite baggrund med 60% opacity */
-  padding: 50px;
+/*  padding: 50px;
   margin: 20px;
   position: absolute;
   top: 136.5%; /* MOBIL */
-}
+/*}
 div.boks3 {
   width: 90%;
   height: 300px;
   background: rgba(234, 230, 227, 0.6); /* offwhite baggrund med 60% opacity */
-  padding: 50px;
+/*  padding: 50px;
   margin: 20px;
   position: absolute;
   top: 182%; /* MOBIL */
-}
+/*}*/
 
 /* Solid divider: https://www.w3schools.com/howto/howto_css_dividers.asp */
 hr.solid {
@@ -188,13 +228,11 @@ hr.solid {
 }
 
 /* INSPIRATION */
-
 /* inspiration tekst */
 .inspiration h2 {
   text-align: center;
   margin-top: 25px;
 }
-
 .inspiration a {
   text-align: center;
   text-decoration: none;
@@ -204,11 +242,9 @@ hr.solid {
   margin-bottom: 25px;
   font-size: 20px;
 }
-
 .inspiration a:hover, a:active {
   color: var(--green);
 }
-
 /* inspiration galleri */
 .inspirationgalleri {
   display: flex;
@@ -216,7 +252,6 @@ hr.solid {
   gap: 10px;
   justify-content: center;
 }
-
 .inspirationgalleri img{
   width: 45%;
 }
