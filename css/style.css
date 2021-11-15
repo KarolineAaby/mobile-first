@@ -88,10 +88,10 @@ header {
   width: 100%;
   max-width: 400px; /* MOBIL */
   background: var(--offwhite);
-  padding-bottom: 5%; /* MOBIL */
+  padding-bottom: 5%;
 }
 header img {
-  margin-bottom: 5%; /* MOBIL */
+  margin-bottom: 5%;
 }
 header .btn {
   position: absolute;
@@ -268,10 +268,40 @@ hr.solid {
     font-size: 1.4em;
     text-align: center;
   }
+
+  /* FORSIDE - header */
+  header {
+    max-width: 600px;
+  }
+  header .btn {
+    top: 40%;
+    left: 50%;
+    font-size: 18px;
+  }
+  header h2 {
+    top: 20%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  /* Typography */
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    max-width: 15ch;
+  }
+  p {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  /* FORSIDE - header */
+  header {
+    max-width: 767px;
+  }
+  header .btn {
+    font-size: 25px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
