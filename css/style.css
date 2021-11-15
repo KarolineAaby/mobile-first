@@ -253,7 +253,7 @@ hr.solid {
   justify-content: center;
 }
 .inspirationgalleri img{
-  width: 45%;
+  width: 23%;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -281,20 +281,14 @@ hr.solid {
   header h2 {
     top: 20%;
   }
+  /* inspiration galleri */
+  .inspirationgalleri img{
+    width: 45%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  /* Typography */
-  h1 {
-    font-size: 2em;
-    text-align: center;
-    max-width: 15ch;
-  }
-  p {
-    font-size: 1.4em;
-    text-align: center;
-  }
   /* FORSIDE - header */
   header {
     max-width: 767px;
