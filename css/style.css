@@ -23,6 +23,9 @@
 
   /* whitespace */
   --whitespace: .5rem;
+
+  /* teksturer ("fliselagte baggrunde") */
+  --baggrund: url('../images/baggrund.png')
 }
 
 * {
@@ -40,6 +43,14 @@ html {
 #wrap {
   min-height: 100vh;
   margin: auto;
+}
+
+/*baggrund */
+body {
+  background-image: var(--baggrund);
+  background-size:100% auto;
+  background-color: var(--white);
+  font-family: var(--font);
 }
 
 /* Typography */
@@ -76,11 +87,9 @@ header {
   background: var(--offwhite);
   padding-bottom: 5%; /* MOBIL */
 }
-
 header img {
   margin-bottom: 5%; /* MOBIL */
 }
-
 header .btn {
   position: absolute;
   top: 40%; /* MOBIL */
@@ -98,7 +107,6 @@ header .btn {
   border-radius: 60px;
   text-align: center;
 }
-
 header h2 {
   position: absolute;
   top: 20%; /* MOBIL */
@@ -122,7 +130,6 @@ div.boks1 {
   position: absolute;
   top: 91%; /* MOBIL */
 }
-
 div.boks2 {
   width: 90%;
   height: 300px;
@@ -132,7 +139,6 @@ div.boks2 {
   position: absolute;
   top: 136.5%; /* MOBIL */
 }
-
 div.boks3 {
   width: 90%;
   height: 300px;
@@ -152,20 +158,16 @@ hr.solid {
 .shop img {
   padding-top: 25px;
 }
-
 /* shop tekst*/
 .shop h4 {
   position: absolute;
   top: 231%; /* MOBIL */
   left: 37%; /* MOBIL */
 }
-
 .shop p {
   position: absolute;
   top: 235%; /* MOBIL */
-
 }
-
 /*shop knap*/
 .btn2 {
   position: absolute;
@@ -185,6 +187,39 @@ hr.solid {
   text-align: center;
 }
 
+/* INSPIRATION */
+
+/* inspiration tekst */
+.inspiration h2 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.inspiration a {
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--brødtekst);
+  color: var(--black);
+  margin-top: var(--whitespace);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.inspiration a:hover, a:active {
+  color: var(--green);
+}
+
+/* inspiration galleri */
+.inspirationgalleri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.inspirationgalleri img{
+  width: 45%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
