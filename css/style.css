@@ -43,13 +43,7 @@ html {
 }
 
 /* Typography */
-h1 {
-  font-family: var(--overskrift);
-  color: var(--black);
-  margin-top: var(--whitespace);
-  margin-bottom: var(--whitespace);
-}
-h3 {
+h1, h2, h3 {
   font-family: var(--overskrift);
   color: var(--black);
   margin-top: var(--whitespace);
@@ -153,6 +147,44 @@ div.boks3 {
 hr.solid {
   border-top: 2px solid var(--black);
 }
+
+/* SHOP */
+.shop img {
+  padding-top: 25px;
+}
+
+/* shop tekst*/
+.shop h4 {
+  position: absolute;
+  top: 231%; /* MOBIL */
+  left: 37%; /* MOBIL */
+}
+
+.shop p {
+  position: absolute;
+  top: 235%; /* MOBIL */
+
+}
+
+/*shop knap*/
+.btn2 {
+  position: absolute;
+  top: 248%; /* MOBIL */
+  left: 50%; /* MOBIL */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: var(--green);
+  color: var(--white);
+  font-family: var(--overskrift);
+  font-size: 18px; /* MOBIL */
+  padding: 12px 52px;
+  padding-top: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+  text-align: center;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
