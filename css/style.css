@@ -383,6 +383,11 @@ hr.solid {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* navbar burgermenu */
+    .burgermenu{
+      display:none;
+    }
+
   /* FORSIDE - header */
   .header {
     display: none;
@@ -395,6 +400,11 @@ hr.solid {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* navbar burgermenu */
+    .burgermenu{
+      display:none;
+    }
+
   /* FORSIDE - header */
   .header {
     display: none;
@@ -407,6 +417,11 @@ hr.solid {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /* navbar burgermenu */
+    .burgermenu{
+      display:none;
+    }
+
   /* FORSIDE - header */
   .header {
     display: none;
