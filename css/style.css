@@ -57,7 +57,13 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1 {
+  font-family: var(--overskrift);
+  color: var(--black);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+h2, h3 {
   font-family: var(--overskrift);
   color: var(--black);
   margin-top: var(--whitespace);
@@ -78,9 +84,6 @@ p {
   color: var(--black);
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
 }
 
 /* Billeder */
@@ -102,12 +105,11 @@ img {
 /* Dropdown Button - https://www.w3schools.com/howto/howto_css_dropdown.asp */
 .dropbtn {
   color: var(--black);
-  background-color:var(--offwhite);
   padding-bottom: 16px;
   padding-top: 16px;
   font-family: var(--brødtekst);
   font-size: 130%;
-  border: none;
+  text-decoration: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -123,6 +125,7 @@ img {
   background-color: var(--offwhite);
   min-width: 160px;
   z-index: 1;
+  margin-top: 16px;
 }
 
 /* Links inside the dropdown */
@@ -157,16 +160,16 @@ img {
 }
 
 /* FORSIDE - header */
-header {
+.headerforside {
   position: relative;
   width: 100%;
   background: var(--offwhite);
   padding-bottom: 5%;
 }
-header img {
+.headerforside img {
   margin-bottom: 5%;
 }
-header .btn {
+.headerforside .btn {
   position: absolute;
   top: 40%; /* MOBIL */
   left: 50%; /* MOBIL */
@@ -183,17 +186,26 @@ header .btn {
   border-radius: 60px;
   text-align: center;
 }
-header h2 {
+.headerforside h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.headerforside h2 {
   position: absolute;
   top: 15%; /* MOBIL */
   font-family: var(--brødtekst);
   color: var(--black);
-  margin-top: var(--whitespace);
-  margin-bottom: var(--whitespace);
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
 }
+.headerforside p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 
 /* FORSIDE - kategorier */
 #kategorier {
@@ -305,20 +317,68 @@ hr.solid {
   width: 23%;
 }
 
+
+/* !! UNDERSIDE - BOOKING !! */
+/* billede i header */
+    #header-img{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    }
+
+/* UNDERSIDE - Booking - Typografi */
+.bodytekst{
+  font-family: var(--overskrift);
+  color: var(--black);
+  text-align: center;
+  }
+
+.bodytekst h1{
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
+
+.bodytekst h2{
+  font-size: 16px;
+}
+
+/* UNDERSIDE - Booking - bokse med behandlinger */
+.container{
+  width: 85%;
+  height: 60px;
+  background-color: var(--offwhite);
+  margin-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.item p{
+  font-size: 17px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.row{
+  display: none;
+}
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* Typography */
-  h1 {
+  .headerforside h1 {
     font-size: 1.4em;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
   }
-  p {
+  .headerforside p {
     font-size: 1.4em;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   /* navbar burgermenu ved lille skærm */
   .burgermenu{
@@ -345,7 +405,7 @@ hr.solid {
   .headercom {
     display: none;
   }
-  header .btn {
+  .headerforside .btn {
     top: 30%;
     left: 50%;
     font-size: 18px;
@@ -357,6 +417,30 @@ hr.solid {
   /* Shop */
   .shopcom {
     display: none;
+  }
+
+  /* !! UNDERSIDE - BOOKING !! */
+  /* billede i header */
+  #header-img {
+  margin-top: 0px;
+  width: 100%;
+  }
+
+  /* UNDERSIDE - Booking - Typografi */
+  .bodytekst h1{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodytekst h2{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item p{
+    font-size: 17px;
   }
 }
 
@@ -371,13 +455,42 @@ hr.solid {
   .header {
     display: none;
   }
-  header .btn {
+  .headerforside .btn {
     top: 35%;
     font-size: 25px;
   }
   /* Shop */
   .shopbillede {
     display: none;
+  }
+
+  /* !! UNDERSIDE - BOOKING !! */
+  /* billede i header */
+  #header-img {
+  margin-top: 0px;
+  width: 100%;
+  }
+
+  /* UNDERSIDE - Booking - Typografi */
+  .bodytekst h1{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodytekst h2{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item p{
+    font-size: 17px;
+  }
+
+  /* UNDERSIDE - Booking - bokse med behandlinger */
+  .container{
+    width: 70%;
   }
 }
 
@@ -396,6 +509,28 @@ hr.solid {
   .shopbillede {
     display: none;
   }
+
+  /* UNDERSIDE - Booking - Typografi */
+  .bodytekst h1{
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodytekst h2{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* UNDERSIDE - Booking - bokse med behandlinger */
+  .container{
+    width: 70%;
+  }
+
+  .item p{
+    font-size: 18px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -413,6 +548,28 @@ hr.solid {
   .shopbillede {
     display: none;
   }
+
+  /* UNDERSIDE - Booking - Typografi */
+  .bodytekst h1{
+    font-size: 37px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodytekst h2{
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* UNDERSIDE - Booking - bokse med behandlinger */
+  .container{
+    width: 70%;
+  }
+
+  .item p{
+    font-size: 18px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -429,5 +586,9 @@ hr.solid {
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /* UNDERSIDE - Booking - bokse med behandlinger */
+  .container{
+    width: 65%;
   }
 }

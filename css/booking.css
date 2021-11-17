@@ -145,7 +145,6 @@ img {
   cursor: pointer;
 }
 
-
 /* UNDERSIDE - Behandling */
 /* flexbox til behandlinger */
 .butikflex{
@@ -194,11 +193,11 @@ img {
   .inspiration {
     display: none;
   }
+  */
 
 
 /* UNDERSIDE - Booking */
 /* billede i header */
-
     #header-img{
     margin-top: 0px;
     margin-bottom: 30px;
@@ -256,7 +255,6 @@ img {
   display: none;
 }
 
-}
 
 
 
@@ -276,7 +274,7 @@ img {
 
 /* UNDERSIDE - Booking */
 /* billede i header */
-#header-img{
+#header-img {
 margin-top: 0px;
 width: 100%;
 }

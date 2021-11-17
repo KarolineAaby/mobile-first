@@ -6,39 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Booking</title>
   <meta name="author" content="#">
-  <meta name="keywords" content="#">
+  <meta name="keywords" content="Michella Carstens">
   <meta name="description" content="#">
-  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- favicon = ikon i faneblad / browser -->
   <link rel="icon" type="image/x-icon" href="#" />
 </head>
 
 <body>
-<nav class="navbar">
-  <img src="images/logo.png" alt="#" style="width: 120px; height:50px;">
+<div id="wrap">
+  <!-- navigationsbar -->
+  <nav id="navigation">
+    <a href="index.html"><img src="images/logo.png" alt="Beauty Star logo" style="width: 120px; height:50px;"></a>
 
-  <div class="burgermenu">
-    <span id="showmenu">☰</span>
+      <div class="burgermenu">
+      <span id="showmenu">☰</span>
+      </div>
+
+      <div class="dropdown">
+      <a href="behandling.html" class="dropbtn">Behandlinger</a>
+      <div class="dropdown-content">
+        <a href="#">Ansigtsbehandling</a>
+        <a href="#">Vipper & bryn</a>
+        <a href="#">Negle</a>
+        <a href="#">Spraytan</a>
+        <a href="#">Voksbehandling</a>
+      </div>
     </div>
-
-  <div class="navbar-links">
-    <ul>
-      <li><a href="#">Behandlinger</a></li>
-      <li><a href="#">Booking</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Academy</a></li>
-      <li><a href="#">Om os</a></li>
-    </ul>
-  </div>
-</nav>
-</body>
-
-
-<div id="header-img">
-    <img src="images/headerbooking.png" alt="#" style="max-width">
+    <div class="dropdown">
+      <a href="booking.html" class="dropbtn">Booking</a>
+      <div class="dropdown-content">
+        <a href="#">Prisliste</a>
+      </div>
     </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Shop</a>
+      <div class="dropdown-content">
+        <a href="#">Produkter</a>
+        <a href="#">Gavekort</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Academy</a>
+      <div class="dropdown-content">
+        <a href="#">Kursus profil</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Om os</a>
+    </div>
+  </nav>
 
+<header id="header-img">
+    <img src="images/headerbooking.png" alt="#" style="100%">
+  </header>
 
+<main>
 <div class="bodytekst">
     <h1>Book tid</h1>
     <h2>Negle</h2>
@@ -103,6 +126,8 @@
     <p>Voksbehandling af ben pris 475,-</p>
     </div>
 </section>
+</main>
 
-
+</div><!-- /wrap -->
+</body>
 </html>
