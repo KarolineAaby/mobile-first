@@ -254,6 +254,9 @@ div.boks {
 div.boks h4 {
   margin-top: 25%;
 }
+div.boks a {
+  text-decoration: none;
+}
 div.behandlinger {
   background-image: var(--behandlinger);
   background-size: cover;
@@ -404,7 +407,7 @@ hr.solid {
 }
 
 /* UNDERSIDE BEHANDLINGER*/
-/*behanliner -typography */
+/*behanlinger -typography */
 .behandlingeroverskrift {
   text-align: center;
   font-family: var(--overskrift);
@@ -590,8 +593,12 @@ color: black;
     }
 
     /* UNDERSIDE - BEHANDLING */
-    .behandlinger {
+    .behandlingerweb {
     display: none;
+    }
+    /*behanlinger -typography */
+    .behandlingeroverskrift {
+      font-size: 25px;
     }
 
   /* FOOTER */
@@ -699,7 +706,7 @@ color: black;
     }
 
     /* UNDERSIDE - BEHANDLING */
-    .behandlinger {
+    .behandlingerweb {
     display: none;
     }
 
@@ -808,9 +815,12 @@ color: black;
     }
 
     /* UNDERSIDE BEHANDLINGER - inspiration galleri */
-    .behandlinger {
+    .behandlingerweb {
+      padding-top: 25px;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
 
     .behandlingerweb img{
@@ -941,9 +951,12 @@ color: black;
     }
 
     /* UNDERSIDE BEHANDLINGER - inspiration galleri */
-    .behandlinger {
+    .behandlingerweb {
+      padding-top: 25px;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
 
     .behandlingerweb img{
@@ -1056,15 +1069,16 @@ color: black;
       margin-right: 3em;
     }
     /* UNDERSIDE BEHANDLINGER - inspiration galleri */
-    .behandlinger {
+    .behandlingerweb {
+      padding-top: 25px;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
-
     .behandlingerweb img{
       width: 45%;
     }
-
     .butikflex{
      display:none;
     }
