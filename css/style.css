@@ -68,9 +68,6 @@ h2, h3 {
   color: var(--black);
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
-  /* padding-left: 50px;
-  padding-right: 50px;
-  text-align: center; */
 }
 h4 {
   font-family: var(--overskrift);
@@ -406,6 +403,42 @@ hr.solid {
   padding-top: 2em;
 }
 
+/* UNDERSIDE BEHANDLINGER*/
+/*behanliner -typography */
+.behandlingeroverskrift {
+  text-align: center;
+  font-family: var(--overskrift);
+  color: var(--black);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* text-block til tekst over billederne*/
+.text-block {
+  position: relative;
+  display: block;
+  bottom: 150px;
+}
+.btnbehandling {
+  position: absolute;
+  top: 40%; /* MOBIL */
+  left: 50%; /* MOBIL */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: var(--green);
+  color: var(--white);
+  font-family: var(--overskrift);
+  font-size: 18px; /* MOBIL */
+  padding: 12px 35px;
+  padding-top: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+  text-align: center;
+}
+.container1 img {
+  padding-bottom: 30px
+}
+
 /* FOOTER */
 #copyright {
   font-size: 15px;
@@ -556,6 +589,11 @@ color: black;
       text-align: center;
     }
 
+    /* UNDERSIDE - BEHANDLING */
+    .behandlinger {
+    display: none;
+    }
+
   /* FOOTER */
   /* fjern web footer*/
   .row{
@@ -659,6 +697,12 @@ color: black;
       font-size: 1.4em;
       text-align: center;
     }
+
+    /* UNDERSIDE - BEHANDLING */
+    .behandlinger {
+    display: none;
+    }
+
   /* FOOTER */
  /* fjern web footer*/
  .row{
@@ -761,6 +805,20 @@ color: black;
     }
     .kassebillede {
       margin: 10px;
+    }
+
+    /* UNDERSIDE BEHANDLINGER - inspiration galleri */
+    .behandlinger {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .behandlingerweb img{
+      width: 45%;
+    }
+
+    .butikflex{
+     display:none;
     }
 
   /* FOOTER */
@@ -881,6 +939,20 @@ color: black;
       margin-bottom: 10px;
       margin-right: 3em;
     }
+
+    /* UNDERSIDE BEHANDLINGER - inspiration galleri */
+    .behandlinger {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .behandlingerweb img{
+      width: 45%;
+    }
+
+    .butikflex{
+     display:none;
+    }
   /* FOOTER */
  /* kolonner til footer på computer */
      .row{
@@ -983,7 +1055,19 @@ color: black;
       margin-bottom: 10px;
       margin-right: 3em;
     }
+    /* UNDERSIDE BEHANDLINGER - inspiration galleri */
+    .behandlinger {
+      display: flex;
+      justify-content: space-between;
+    }
 
+    .behandlingerweb img{
+      width: 45%;
+    }
+
+    .butikflex{
+     display:none;
+    }
     /* FOOTER */
    /* kolonner til footer på computer */
        .row{
