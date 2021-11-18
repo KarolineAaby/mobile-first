@@ -68,9 +68,9 @@ h2, h3 {
   color: var(--black);
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
-  padding-left: 50px;
+  /* padding-left: 50px;
   padding-right: 50px;
-  text-align: center;
+  text-align: center; */
 }
 h4 {
   font-family: var(--overskrift);
@@ -159,6 +159,36 @@ img {
   cursor: pointer;
 }
 
+/* BURGERMENU */
+ nav a {
+  color: var(--black);
+  text-decoration: none;
+}
+/* MENUBAR */
+#navigationburger {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+    width: 100%;
+    color: var(--black);
+}
+
+/* Dropdown Button - https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.btnburger {
+  color: var(--black);
+  font-family: var(--overskrift);
+  font-size: 170%;
+  text-decoration: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.navburger {
+  padding: 20px;
+}
+
+
 /* FORSIDE - header */
 .headerforside {
   position: relative;
@@ -210,26 +240,27 @@ img {
 /* FORSIDE - kategorier */
 #kategorier {
   padding-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
 }
 
 /* NY Boks med tekst ovenpå billede */
 div.boks {
   width: 90%;
-  height: 90%;
   background: rgba(234, 230, 227, 0.65); /* offwhite baggrund med 65% opacity */
   padding: 50px;
-  margin: 20px;
+  height: 250px;
+  /*margin: 50px;*/
+  margin: auto;
+  /*margin-top: 10px;*/
+  /* margin-left: auto;
+  margin-bottom: auto;*/
+}
+div.boks h4 {
+  margin-top: 25%;
 }
 div.behandlinger {
   background-image: var(--behandlinger);
   background-size: cover;
   background-repeat: no-repeat;
-/*  background-size:100% auto; */
-  height: 300px;
   padding-top: 0.5%;
   margin-top: 25px;
 }
@@ -237,7 +268,6 @@ div.academy {
   background-image: var(--academy);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
   padding-top: 0.5%;
   margin-top: 25px;
 }
@@ -245,7 +275,6 @@ div.omos {
   background-image: var(--omos);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
   padding-top: 0.5%;
   margin-top: 25px;
 }
@@ -253,6 +282,8 @@ div.omos {
 /* Solid divider: https://www.w3schools.com/howto/howto_css_dividers.asp */
 hr.solid {
   border-top: 2px solid var(--black);
+  width: 10rem;
+
 }
 
 /* SHOP */
@@ -552,6 +583,25 @@ color: black;
     display: none;
   }
 
+  /*forside - kategorier */
+  #kategorier {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  div.behandlinger {
+  width: 250px;
+  }
+  div.academy {
+   width: 250px;
+  }
+  div.omos {
+  width: 250px;
+  }
+
+
   /* !! UNDERSIDE - BOOKING !! */
   /* billede i header */
   #header-img {
@@ -630,6 +680,23 @@ color: black;
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /*forside - kategorier */
+  #kategorier {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  div.behandlinger {
+  width: 250px;
+  }
+  div.academy {
+   width: 250px;
+  }
+  div.omos {
+  width: 250px;
   }
 
   /* UNDERSIDE - Booking - Typografi */
@@ -732,6 +799,23 @@ color: black;
   .shopbillede {
     display: none;
   }
+  /*forside - kategorier */
+  #kategorier {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  div.behandlinger {
+  width: 300px;
+  }
+  div.academy {
+   width: 300px;
+  }
+  div.omos {
+  width: 300px;
+  }
 
   /* UNDERSIDE - Booking - Typografi */
   .bodytekst h1{
@@ -832,6 +916,23 @@ color: black;
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /*forside - kategorier */
+  #kategorier {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+  }
+  div.behandlinger {
+  width: 350px;
+  }
+  div.academy {
+   width: 350px;
+  }
+  div.omos {
+  width: 350px;
   }
   /* UNDERSIDE - Booking - bokse med behandlinger */
   .container{

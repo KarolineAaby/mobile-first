@@ -270,7 +270,7 @@ img {
     display: flex;
     background-color: var(--offwhite);
     color: black;
-
+}
 
 /* UNDERSIDE - Booking */
 /* billede i header */
@@ -370,8 +370,6 @@ width: 100%;
     padding: 1rem;
     margin-right: 15px;
     display: block;
-
-
   }
 
   /* UNDERSIDE - Booking */
