@@ -223,8 +223,8 @@ img {
   font-family: var(--brødtekst);
   font-size: 22px;
   color: var(--black);
-  padding-left: 22%;
-  padding-right: 22%;
+  padding-left: 30%;
+  padding-right: 30%;
   text-align: center;
 }
 .headerforside p {
@@ -347,7 +347,6 @@ hr.solid {
 /* inspiration tekst */
 .inspiration h2 {
   text-align: center;
-  margin-top: 25px;
 }
 .inspiration a {
   text-align: center;
@@ -649,11 +648,9 @@ color: black;
     font-size: 30px;
   }
   .headerforside h2 {
-    /* top: 15%; */
     font-size: 25px;
-    padding-left: 30%;
-    padding-right: 30%;
-    /*text-align: center; */
+    padding-left: 35%;
+    padding-right: 35%;
   }
   .headerforside p {
     font-size: 20px;
@@ -967,9 +964,9 @@ color: black;
   }
   .headerforside h2 {
     top: 20%;
-    font-size: 27px;
-    padding-left: 35%;
-    padding-right: 35%;
+    font-size: 30px;
+    padding-left: 38%;
+    padding-right: 38%;
   }
   .headerforside p {
     padding-left: 15%;
@@ -1142,8 +1139,8 @@ color: black;
   .headerforside h2 {
     top: 23%;
     font-size: 32px;
-    padding-left: 36%;
-    padding-right: 36%;
+    padding-left: 40%;
+    padding-right: 40%;
   }
   .headerforside p {
     font-size: 25px;
