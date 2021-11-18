@@ -185,7 +185,6 @@ img {
   padding: 20px;
 }
 
-
 /* FORSIDE - header */
 .headerforside {
   position: relative;
@@ -222,9 +221,10 @@ img {
   position: absolute;
   top: 15%; /* MOBIL */
   font-family: var(--brødtekst);
+  font-size: 22px;
   color: var(--black);
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 22%;
+  padding-right: 22%;
   text-align: center;
 }
 .headerforside p {
@@ -288,22 +288,30 @@ hr.solid {
 
 /* SHOP */
 .shop img {
-  padding-top: 25px;
+  padding-top: 50px;
 }
 /* shop tekst*/
 .shop h4 {
-  position: absolute;
-  top: 231%; /* MOBIL */
-  left: 37%; /* MOBIL */
+  position: relative;
+  display: block;
+  bottom: 440px;
+  text-align: center;
+  font-family: var(--overskrift);
+  font-size: 15px;
 }
 .shop p {
-  position: absolute;
-  top: 235%; /* MOBIL */
+  position: relative;
+  display: block;
+  bottom: 440px;
+  text-align: center;
+  font-family: var(--brødtekst);
+  font-size: 22px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 /*shop knap*/
 .btn2 {
   position: absolute;
-  top: 240%; /* MOBIL */
   left: 50%; /* MOBIL */
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -317,6 +325,22 @@ hr.solid {
   cursor: pointer;
   border-radius: 60px;
   text-align: center;
+}
+.text-blockforside {
+  position: relative;
+  display: block;
+  bottom: 410px;
+}
+
+/* FOOTER */
+#copyright {
+  font-size: 15px;
+  text-align: center;
+}
+
+.copyright {
+  background-color: var(--white);
+  padding: 1em;
 }
 
 /* INSPIRATION */
@@ -508,14 +532,12 @@ color: black;
     flex-direction: column;
     justify-content: space-between;
   }
-
   .burgermenu .bar{
     height: 3px;
     width: 100%;
     background-color: var(--black);
     border-radius: 10px;
   }
-
   .dropdown{
     display: none;
   }
@@ -601,15 +623,15 @@ color: black;
       font-size: 25px;
     }
 
-  /* FOOTER */
-  /* fjern web footer*/
-  .row{
-  display: none;
-  }
-}
+    /* FOOTER */
+    /* fjern web footer*/
+    .row{
+    display: none;
+    }
+ }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
   /* navbar burgermenu */
     .burgermenu{
       display:none;
@@ -621,11 +643,47 @@ color: black;
   }
   .headerforside .btn {
     top: 35%;
-    font-size: 25px;
+    font-size: 23px;
   }
+  .headerforside h1 {
+    font-size: 30px;
+  }
+  .headerforside h2 {
+    /* top: 15%; */
+    font-size: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+    /*text-align: center; */
+  }
+  .headerforside p {
+    font-size: 20px;
+    }
+
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /* SHOP */
+  .shopbillede img {
+    padding-top: 50px;
+  }
+  /* shop tekst*/
+  .shop h4 {
+    bottom: 380px;
+    font-size: 17px;
+  }
+  .shop p {
+    bottom: 380px;
+    font-size: 23px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  /*shop knap*/
+  .btn2 {
+    font-size: 23px;
+  }
+  .text-blockforside {
+    bottom: 350px;
   }
 
   /*forside - kategorier */
@@ -645,7 +703,6 @@ color: black;
   div.omos {
   width: 250px;
   }
-
 
   /* !! UNDERSIDE - BOOKING !! */
   /* billede i header */
@@ -728,9 +785,43 @@ color: black;
   .header {
     display: none;
   }
+  .headerforside h2 {
+    top: 18%;
+    font-size: 27px;
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+  .headerforside p {
+    padding-left: 10%;
+    padding-right: 10%;
+    }
+
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /* shop tekst*/
+  .shop h4 {
+    bottom: 440px;
+    text-align: left;
+    font-size: 15px;
+    padding-left: 65%;
+  }
+  .shop p {
+    bottom: 440px;
+    text-align: left;
+    font-family: var(--brødtekst);
+    font-size: 22px;
+    padding-left: 65%;
+    padding-right: 3rem;
+  }
+  /*shop knap*/
+  .btn2 {
+    left: 75%;
+    font-size: 23px;
+  }
+  .text-blockforside {
+    bottom: 400px;
   }
   /*forside - kategorier */
   #kategorier {
@@ -863,9 +954,52 @@ color: black;
   .header {
     display: none;
   }
+  /* FORSIDE - header */
+  .header {
+    display: none;
+  }
+  .headerforside .btn {
+    top: 35%;
+    font-size: 23px;
+  }
+  .headerforside h1 {
+    font-size: 30px;
+  }
+  .headerforside h2 {
+    top: 20%;
+    font-size: 27px;
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+  .headerforside p {
+    padding-left: 15%;
+    padding-right: 15%;
+    }
+
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /* Shop */
+  .shopbillede {
+    display: none;
+  }
+  /* shop tekst*/
+  .shop h4 {
+    bottom: 540px;
+    font-size: 16px;
+    padding-left: 65%;
+  }
+  .shop p {
+    bottom: 540px;
+    font-size: 26px;
+  }
+  /*shop knap*/
+  .btn2 {
+    left: 74%;
+  }
+  .text-blockforside {
+    bottom: 480px;
   }
   /*forside - kategorier */
   #kategorier {
@@ -998,9 +1132,44 @@ color: black;
   .header {
     display: none;
   }
+  .headerforside .btn {
+    top: 35%;
+    font-size: 25px;
+  }
+  .headerforside h1 {
+    font-size: 35px;
+  }
+  .headerforside h2 {
+    top: 23%;
+    font-size: 32px;
+    padding-left: 36%;
+    padding-right: 36%;
+  }
+  .headerforside p {
+    font-size: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    }
   /* Shop */
   .shopbillede {
     display: none;
+  }
+  /* shop tekst*/
+  .shop h4 {
+    bottom: 620px;
+    font-size: 18px;
+    padding-left: 65%;
+  }
+  .shop p {
+    bottom: 620px;
+    font-size: 28px;
+  }
+  /*shop knap*/
+  .btn2 {
+    left: 72%;
+  }
+  .text-blockforside {
+    bottom: 560px;
   }
   /*forside - kategorier */
   #kategorier {
