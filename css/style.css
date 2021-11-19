@@ -332,17 +332,6 @@ hr.solid {
   bottom: 410px;
 }
 
-/* FOOTER */
-#copyright {
-  font-size: 15px;
-  text-align: center;
-}
-
-.copyright {
-  background-color: var(--white);
-  padding: 1em;
-}
-
 /* INSPIRATION */
 /* inspiration tekst */
 .inspiration h2 {
